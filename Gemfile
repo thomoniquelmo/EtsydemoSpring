@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'carrierwave'
 gem 'carrierwave-dropbox'
 gem "figaro"
+gem "mini_magick"
 
 group :production do
 
