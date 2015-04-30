@@ -1,9 +1,13 @@
-<h1>Listing listings</h1>
-
+<div class="jumbotron">
+<h1>Handcrafted eggs from around the town.</h1>
+<h2>Discover one of a kind eggs from around the way and back.</h2>
+</div>
+<div class="center">
+  <h1>Boiled Eggs</h1>
 
     <div class="row">
     <% @listings.each do |listing| %>
-    
+   
       <div class="col-md-3">
         <%= link_to image_tag(listing.image_url(:thumb)), listing %>
         <div class="caption">
@@ -23,3 +27,5 @@
 <% if (user_signed_in?) %>
 <%= link_to 'New Listing', new_listing_path, class: 'btn btn-link' %>
 <% end %> 
+  
+</div>  

@@ -6,7 +6,12 @@
   <div class="col-md-4">
       <h3><%= @listing.name %></h3>
       <p><%= @listing.description %></p>
-    <p><%= number_to_currency(@listing.price) %></p> 
+      <p><%= number_to_currency(@listing.price) %></p> 
+      <br>
+      <div class="center">
+        <%= link_to "Buy It Now", new_listing_order_path(@listing), class: "btn btn-success" %>
+      </div>  
+  
   </div>
 </div>
 
